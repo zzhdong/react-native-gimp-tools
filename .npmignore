@@ -67,3 +67,4 @@ android/build
 ios/build
 Screenshots
 .gif
+package-lock.json

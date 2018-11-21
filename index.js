@@ -1,6 +1,5 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNGimpTools } = NativeModules;
-
-export default RNGimpTools;
+//颜色选择器
+export { default as SlidersColorPicker } from 'src/colorPicker/pickers/SlidersColorPicker';

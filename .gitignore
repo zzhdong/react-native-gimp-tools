@@ -60,3 +60,4 @@ docs/output.json
 
 # Bundle artifact
 *.jsbundle
+package-lock.json
