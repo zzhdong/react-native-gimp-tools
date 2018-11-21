@@ -8,19 +8,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "react": "16.5.0",
-    "react-native": "0.57.2",
-    "prop-types": "^15.6.2",
-    "react-native-slider": "^0.11.0",
-    "tinycolor2": "^1.4.1"
-  },
   "keywords": [
     "react-native",
     "react-native-component"
   ],
   "license": "",
   "peerDependencies": {
-    "react-native": "*"
+    "react": "*",
+    "react-native": "*",
+    "prop-types": "*",
+    "react-native-slider": "*",
+    "tinycolor2": "*"
   }
 }
