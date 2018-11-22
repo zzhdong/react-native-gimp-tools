@@ -439,7 +439,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
     }
     
     CGFloat topPadding = style.verticalPadding + safeInsets.top;
-    CGFloat bottomPadding = style.verticalPadding + safeInsets.bottom;
+    CGFloat bottomPadding = style.verticalPadding + safeInsets.bottom + 20;
     
     if([point isKindOfClass:[NSString class]]) {
         if([point caseInsensitiveCompare:CSToastPositionTop] == NSOrderedSame) {
@@ -471,7 +471,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
         self.maxHeightPercentage = 0.8;
         self.horizontalPadding = 10.0;
         self.verticalPadding = 10.0;
-        self.cornerRadius = 10.0;
+        self.cornerRadius = 5.0;
         self.titleFont = [UIFont boldSystemFontOfSize:16.0];
         self.messageFont = [UIFont systemFontOfSize:16.0];
         self.titleAlignment = NSTextAlignmentLeft;
