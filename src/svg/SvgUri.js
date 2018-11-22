@@ -252,7 +252,7 @@ class SvgUri extends Component{
     inspectNode(node){
         // Only process accepted elements
         if (!ACCEPTED_SVG_ELEMENTS.includes(node.nodeName)) {
-            return (<View />);
+            return (<View key={node.nodeName} />);
         }
 
         // Process the xml node
@@ -262,7 +262,7 @@ class SvgUri extends Component{
         // Recursive function.
         if (node.childNodes && node.childNodes.length > 0){
             for (let i = 0; i < node.childNodes.length; i++){
-                const isTextValue = node.childNodes[i].nodeValue
+                const isTextValue = node.childNodes[i].nodeValue;
                 if (isTextValue) {
                     arrayElements.push(node.childNodes[i].nodeValue)
                 } else {
