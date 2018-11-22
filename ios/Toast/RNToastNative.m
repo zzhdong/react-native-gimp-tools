@@ -38,16 +38,19 @@ RCT_EXPORT_METHOD(Show:(NSDictionary *)props) {
     if (titleColor != nil && [titleColor length] > 0) {
         style.titleColor = [RNToastNative ColorFromHexCode: titleColor];
     }
-//    if (titleSize != 0) {
-//        style.titleFont = [UIFont systemFontOfSize: [titleSize intValue]];
-//    }
-
 
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
 
+    NSInteger durationInt = 3.0;
+    if ([duration intValue] == 0) {
+        durationInt = 3.0;
+    } else if ([duration intValue] == 1) {
+        durationInt = 5.0;
+    }
+
     // toast with all possible options
     [window makeToast: title
-        duration:3.0 position: CSToastPositionBottom
+        duration:durationInt position: CSToastPositionBottom
        title: nil image: drawable style: style
       completion:^(BOOL didTap) {
           if (didTap) {

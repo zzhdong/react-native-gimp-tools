@@ -94,6 +94,8 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 - (void)showToast:(UIView *)toast duration:(NSTimeInterval)duration position:(id)position completion:(void(^)(BOOL didTap))completion {
     // sanity
     if (toast == nil) return;
+    //如果超过一个toast，则首先关闭其他的
+    if([self.cs_activeToasts count] > 0) self.hideAllToasts;
     
     // store the completion block on the toast view
     objc_setAssociatedObject(toast, &CSToastCompletionKey, completion, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
