@@ -42,6 +42,20 @@ class ToastNative extends PureComponent {
         Error: 4
     };
 
+    static ShowShort(message) {
+        ToastNative.Show({
+            title: message,
+            duration: ToastNative.Duration.Short
+        });
+    }
+
+    static ShowLong(message) {
+        ToastNative.Show({
+            title: message,
+            duration: ToastNative.Duration.Long
+        })
+    }
+
     static Show(props) {
         if (!props) props = {};
         if (props.type === undefined) props.type = ToastNative.defaultProps.type;
