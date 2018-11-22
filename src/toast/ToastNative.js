@@ -29,12 +29,12 @@ class ToastNative extends PureComponent {
         withIcon: true
     };
 
-    static Duration = {
+    static duration = {
         Short: 0,
         Long: 1
     };
 
-    static Types = {
+    static types = {
         Normal: 0,
         Info: 1,
         Success: 2,
@@ -42,21 +42,21 @@ class ToastNative extends PureComponent {
         Error: 4
     };
 
-    static ShowShort(message) {
-        ToastNative.Show({
+    static showShort(message) {
+        ToastNative.show({
             title: message,
-            duration: ToastNative.Duration.Short
+            duration: ToastNative.duration.Short
         });
     }
 
-    static ShowLong(message) {
-        ToastNative.Show({
+    static showLong(message) {
+        ToastNative.show({
             title: message,
-            duration: ToastNative.Duration.Long
+            duration: ToastNative.duration.Long
         })
     }
 
-    static Show(props) {
+    static show(props) {
         if (!props) props = {};
         if (props.type === undefined) props.type = ToastNative.defaultProps.type;
         if (props.title === undefined) props.title = ToastNative.defaultProps.title;
@@ -79,7 +79,7 @@ class ToastNative extends PureComponent {
         } else {
             props.icon = undefined;
         }
-        RNToastNative.Show(props);
+        RNToastNative.show(props);
     }
 
     static successStyle = {
@@ -94,7 +94,7 @@ class ToastNative extends PureComponent {
         )
     };
 
-    static Success(props) {
+    static success(props) {
         if (!props) props = {};
         if (props.tintColor === undefined && Platform.OS === "ios")
             props.tintColor = ToastNative.successStyle.tintColor;
@@ -103,7 +103,7 @@ class ToastNative extends PureComponent {
 
         props.type = ToastNative.Types.Success;
 
-        ToastNative.Show(props);
+        ToastNative.show(props);
     }
 
     static errorStyle = {
@@ -118,7 +118,7 @@ class ToastNative extends PureComponent {
         )
     };
 
-    static Error(props) {
+    static error(props) {
         if (!props) props = {};
         if (props.tintColor === undefined && Platform.OS === "ios")
             props.tintColor = ToastNative.errorStyle.tintColor;
@@ -127,7 +127,7 @@ class ToastNative extends PureComponent {
 
         props.type = ToastNative.Types.Error;
 
-        ToastNative.Show(props);
+        ToastNative.show(props);
     }
 
     static infoStyle = {
@@ -137,7 +137,7 @@ class ToastNative extends PureComponent {
         )
     };
 
-    static Info(props) {
+    static info(props) {
         if (!props) props = {};
         if (props.tintColor === undefined && Platform.OS === "ios")
             props.tintColor = ToastNative.infoStyle.tintColor;
@@ -146,7 +146,7 @@ class ToastNative extends PureComponent {
 
         props.type = ToastNative.Types.Info;
 
-        ToastNative.Show(props);
+        ToastNative.show(props);
     }
 
     static warnStyle = {
@@ -161,7 +161,7 @@ class ToastNative extends PureComponent {
         )
     };
 
-    static Warn(props) {
+    static warn(props) {
         if (!props) props = {};
         if (props.tintColor === undefined && Platform.OS === "ios")
             props.tintColor = ToastNative.warnStyle.tintColor;
@@ -170,21 +170,21 @@ class ToastNative extends PureComponent {
 
         props.type = ToastNative.Types.Warn;
 
-        ToastNative.Show(props);
+        ToastNative.show(props);
     }
 
     static normalStyle = {
         tintColor: "#484d51"
     };
 
-    static Normal(props) {
+    static normal(props) {
         if (!props) props = {};
         if (props.tintColor === undefined && Platform.OS === "ios")
             props.tintColor = ToastNative.normalStyle.tintColor;
 
         props.type = ToastNative.Types.Normal;
 
-        ToastNative.Show(props);
+        ToastNative.show(props);
     }
 
     render() {

@@ -9,8 +9,7 @@
 }
 RCT_EXPORT_MODULE(RNToastNative)
 
-
-RCT_EXPORT_METHOD(Show:(NSDictionary *)props) {
+RCT_EXPORT_METHOD(show:(NSDictionary *)props) {
     NSNumber *type = [props objectForKey: @"type"];
 
     NSString *title = [props objectForKey: @"title"];

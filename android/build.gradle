@@ -36,6 +36,5 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile  'com.github.GrenderG:Toasty:1.3.0'
 }
   
