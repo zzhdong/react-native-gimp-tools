@@ -11,6 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class RNToastNativePackage implements ReactPackage {
+
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
       return Arrays.<NativeModule>asList(new RNToastNativeModule(reactContext));

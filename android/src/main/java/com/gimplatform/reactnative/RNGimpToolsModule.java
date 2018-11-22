@@ -1,4 +1,3 @@
-
 package com.gimplatform.reactnative;
 
 import com.facebook.react.bridge.ReactApplicationContext;

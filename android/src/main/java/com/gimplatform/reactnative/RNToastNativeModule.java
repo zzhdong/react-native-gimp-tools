@@ -1,10 +1,7 @@
-
 package com.gimplatform.reactnative;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
-import com.facebook.react.bridge.ReactMethod;
-
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 
@@ -23,7 +20,6 @@ import android.graphics.drawable.DrawableContainer;
 import com.facebook.react.views.text.ReactFontManager;
 
 import android.os.StrictMode;
-
 import android.graphics.Color;
 import android.widget.Toast;
 import es.dmoral.toasty.Toasty;
