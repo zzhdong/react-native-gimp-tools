@@ -7,7 +7,7 @@
 {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE(RNToastNative)
 
 
 RCT_EXPORT_METHOD(Show:(NSDictionary *)props) {

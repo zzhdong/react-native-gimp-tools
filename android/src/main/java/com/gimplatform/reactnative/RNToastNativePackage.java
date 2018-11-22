@@ -1,4 +1,4 @@
-package com.gimplatform.rn.toast;
+package com.gimplatform.reactnative;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

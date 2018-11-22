@@ -1,5 +1,5 @@
 
-package com.gimplatform.rn.tools;
+package com.gimplatform.reactnative;
 
 import java.util.Arrays;
 import java.util.Collections;
