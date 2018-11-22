@@ -1,5 +1,5 @@
 
-package com.gimplatform.rn.tools;
+package com.gimplatform.rn.toast;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;

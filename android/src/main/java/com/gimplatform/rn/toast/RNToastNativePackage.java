@@ -1,4 +1,4 @@
-package com.gimplatform.rn.tools;
+package com.gimplatform.rn.toast;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
