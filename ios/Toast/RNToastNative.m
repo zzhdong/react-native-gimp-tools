@@ -1,4 +1,4 @@
-#import "ToastNative.h"
+#import "RNToastNative.h"
 #import "RCTUtils.h"
 
 @implementation ToastNative
