@@ -1,7 +1,7 @@
 #import "RNToastNative.h"
 #import "RCTUtils.h"
 
-@implementation ToastNative
+@implementation RNToastNative
 
 - (dispatch_queue_t)methodQueue
 {
@@ -30,13 +30,13 @@ RCT_EXPORT_METHOD(Show:(NSDictionary *)props) {
         drawable = [self generateVectorIcon: icon];
     }
     if (tintColor != nil && [tintColor length] > 0) {
-        style.backgroundColor = [ToastNative ColorFromHexCode: tintColor];
+        style.backgroundColor = [RNToastNative ColorFromHexCode: tintColor];
     }
     if (drawable != nil) {
         style.imageSize = drawable.size;
     }
     if (titleColor != nil && [titleColor length] > 0) {
-        style.titleColor = [ToastNative ColorFromHexCode: titleColor];
+        style.titleColor = [RNToastNative ColorFromHexCode: titleColor];
     }
 //    if (titleSize != 0) {
 //        style.titleFont = [UIFont systemFontOfSize: [titleSize intValue]];
@@ -70,7 +70,7 @@ RCT_EXPORT_METHOD(Show:(NSDictionary *)props) {
         return [UIImage imageNamed: name];
     }
 
-    UIColor *uiColor = [ToastNative ColorFromHexCode: color];
+    UIColor *uiColor = [RNToastNative ColorFromHexCode: color];
     CGFloat screenScale = RCTScreenScale();
 
     UIFont *font = [UIFont fontWithName:family size:[size floatValue]];
