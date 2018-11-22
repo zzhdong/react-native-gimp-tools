@@ -179,4 +179,4 @@ class ToastNative extends PureComponent {
 }
 
 
-export {ToastNative as RNToastNative};
+export default ToastNative;

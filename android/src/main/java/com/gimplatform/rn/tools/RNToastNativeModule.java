@@ -36,7 +36,7 @@ public class RNToastNativeModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNToasty";
+    return "RNToastNative";
   }
 
   @ReactMethod
