@@ -1,6 +1,7 @@
+import SvgUri from './src/svg/SvgUri';
+import SlidersColorPicker from './src/colorPicker/pickers/SlidersColorPicker';
 
-//SvgUri
-export { SvgUri } from './src/svg/SvgUri';
-
-//颜色选择器
-export { SlidersColorPicker } from './src/colorPicker/pickers/SlidersColorPicker';
+export {
+    SvgUri,                         //SvgUri
+    SlidersColorPicker              //颜色选择器
+};
