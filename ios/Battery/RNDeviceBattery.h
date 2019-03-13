@@ -8,6 +8,6 @@
 #import "RCTEventEmitter.h"
 #endif
 
-@interface DeviceBattery : RCTEventEmitter <RCTBridgeModule>
+@interface RNDeviceBattery : RCTEventEmitter <RCTBridgeModule>
 
 @end

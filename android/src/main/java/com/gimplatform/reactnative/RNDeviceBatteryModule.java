@@ -24,7 +24,7 @@ import java.util.Map;
 import javax.annotation.Nullable;
 
 // @link http://developer.android.com/training/monitoring-device-state/battery-monitoring.html
-public class DeviceBatteryModule extends ReactContextBaseJavaModule
+public class RNDeviceBatteryModule extends ReactContextBaseJavaModule
   implements LifecycleEventListener {
 
   public static final String EVENT_NAME = "batteryChange";
@@ -35,7 +35,7 @@ public class DeviceBatteryModule extends ReactContextBaseJavaModule
   private @Nullable PowerConnectionReceiver batteryStateReceiver;
 
 
-  public DeviceBatteryModule(ReactApplicationContext reactApplicationContext) {
+  public RNDeviceBatteryModule(ReactApplicationContext reactApplicationContext) {
     super(reactApplicationContext);
   }
 
@@ -124,7 +124,7 @@ public class DeviceBatteryModule extends ReactContextBaseJavaModule
 
   @Override
   public String getName() {
-    return "DeviceBattery";
+    return "RNDeviceBattery";
   }
 
   @Override
@@ -147,7 +147,7 @@ public class DeviceBatteryModule extends ReactContextBaseJavaModule
   }
 
   class PowerConnectionReceiver extends BroadcastReceiver {
-    private DeviceBatteryModule mBatteryModule;
+    private RNDeviceBatteryModule mBatteryModule;
 
     @Override
     public void onReceive(Context context, Intent intent) {

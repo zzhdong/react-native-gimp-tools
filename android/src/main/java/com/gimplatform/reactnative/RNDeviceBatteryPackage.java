@@ -13,11 +13,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class DeviceBatteryPackage implements ReactPackage {
+public class RNDeviceBatteryPackage implements ReactPackage {
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
     List<NativeModule> modules = new ArrayList<NativeModule>();
-    modules.add(new DeviceBatteryModule(reactApplicationContext));
+    modules.add(new RNDeviceBatteryModule(reactApplicationContext));
     return modules;
   }
 

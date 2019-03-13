@@ -1,6 +1,6 @@
-#import "DeviceBattery.h"
+#import "RNDeviceBattery.h"
 
-@implementation DeviceBattery
+@implementation RNDeviceBattery
 RCT_EXPORT_MODULE();
 
 static const NSString *BATTERY_CHANGE_EVENT = @"batteryChanged";
