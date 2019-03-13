@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		362F9AF421A69C0B00F03EFD /* RNToastNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 362F9AF021A69C0B00F03EFD /* RNToastNative.m */; };
 		362F9AF521A69C0B00F03EFD /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 362F9AF321A69C0B00F03EFD /* UIView+Toast.m */; };
+		36E9373B223926CC007669C8 /* RNDeviceBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E9373A223926CC007669C8 /* RNDeviceBattery.m */; };
 		B3E7B58A1CC2AC0600A0062D /* RNGimpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNGimpTools.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		362F9AF121A69C0B00F03EFD /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		362F9AF221A69C0B00F03EFD /* RNToastNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNToastNative.h; sourceTree = "<group>"; };
 		362F9AF321A69C0B00F03EFD /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		36E93739223926CC007669C8 /* RNDeviceBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDeviceBattery.h; sourceTree = "<group>"; };
+		36E9373A223926CC007669C8 /* RNDeviceBattery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDeviceBattery.m; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNGimpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGimpTools.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNGimpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGimpTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,9 +67,19 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
+		36E93738223926CC007669C8 /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				36E93739223926CC007669C8 /* RNDeviceBattery.h */,
+				36E9373A223926CC007669C8 /* RNDeviceBattery.m */,
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				36E93738223926CC007669C8 /* Battery */,
 				362F9AEF21A69C0B00F03EFD /* Toast */,
 				B3E7B5881CC2AC0600A0062D /* RNGimpTools.h */,
 				B3E7B5891CC2AC0600A0062D /* RNGimpTools.m */,
@@ -133,6 +146,7 @@
 				362F9AF521A69C0B00F03EFD /* UIView+Toast.m in Sources */,
 				362F9AF421A69C0B00F03EFD /* RNToastNative.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNGimpTools.m in Sources */,
+				36E9373B223926CC007669C8 /* RNDeviceBattery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
