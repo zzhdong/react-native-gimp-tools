@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import PropTypes from 'prop-types';
-import Slider from 'react-native-slider';
+import PropTypes from "prop-types";
+import Slider from '@react-native-community/slider';
 
 const GradientSlider = ({
                             style,
@@ -20,6 +20,7 @@ const GradientSlider = ({
                 step={step}
                 animateTransitions
                 animationType="spring"
+                onStartShouldSetResponder={() => true}
                 thumbTouchSize={{width: 48, height: 48}}
                 maximumValue={maximumValue}
                 onValueChange={onValueChange}
